@@ -93,14 +93,7 @@ a {
     color: #FFBE00;
  }
 
- nav a {
-    padding: 0 0.1rem;
-    margin: 0 0.2rem;
- }
 
- nav {
-    padding-right: 5%;
- }
 
 
 .featured-text  { color: #FFBE00; }
@@ -144,15 +137,28 @@ a {
 
 /* Header & Footer Styles */
 
-.top-section {
+header {
     background-image: url('/images/the-sleep-co-1.jpg');
     background-size: cover;
     background-position: center;
+    padding: 2% 5%;
 }
 
-.top-section h3 {
+header h3 {
     font-size: 5.5rem;
     line-height: 1;
+}
+
+
+nav a {
+    padding: 0 0.3rem;
+    margin: 0 0.2rem;
+    display: inline-block;
+    border: none;
+}
+
+.logo h2 {
+    margin-bottom: 0;
 }
 
 footer a { border: none; }
@@ -184,8 +190,25 @@ footer a { border: none; }
 
 /* Buttons and Forms */
 
-input,
-textarea {
+input, textarea {
     width: 100%;
     display: block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-family: inherit;
+    font-size: 0.9rem;
+    border: 2px solid transparent;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #FFBE00;
+}
+
+.button {
+    padding: 0.5rem 2rem;
+    background-color: #FFBE00;
+    appearance: none;
+    border: 2px solid #FFBE00;
+    color: inherit;
 }

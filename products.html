@@ -1,55 +1,14 @@
-<!DOCTYPE html>
-<html>
-<!-- This is the head of our html. Extra info and links to external resources and metadata -->
-
-<head>
-
-    <!-- Viewport meta for responsive -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>About The Sleep Co</title>
-
-    <!-- This is our font-awesome icone -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- This is for gridlex for flexbox grids -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-
-    <!-------------- Google Font Catamaran 200,400,500,800 ---------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
-
-    <!-- This is a link to the css stylesheet -->
-    <link href="/style.css" rel="stylesheet">
-
-</head>
-
-<!-- This is the body of our html. Content for our site -->
-
-<body>
+---
+layout: default
+---
 
     <!--------------------------- Header nav banner ------------------------->
-    <header class="grid text-center tall-100 md-tall-80">
-        <div class="header-nav col-12-top grid">
-            <div class="col-4_sm-12-middle sm-padded-bottom-0">
-                <a href="/index.html" class="logo">
-                    <h2>The Sleep Co</h2>
-                </a>
-            </div>
-            <nav class="col-8_sm-12-middle text-right sm-text-center">
-                <a href="/index.html">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/products.html">Products</a>
-                <a href="/contact.html">Contact</a>
-            </nav>
+    <header class="grid tall-60">
+        
+        {% include header-nav.html %}
 
         </div>
-
-        </div>
-        <div class="col-12">
+        <div class="col-12 text-center">
             <h3 class="font-weight-extra-bold"><span class="featured-text"> addictively</span> soft</h3>
             <h1 class="font-weight-light">you won't want to get out of bed</h1>
         </div>
@@ -174,23 +133,4 @@
     </section>
 
 
-    <!------------------------------Footer -------------------->
-    <footer class="padded grid-spaceBetween bg-dark">
-        <div class="col-4-bottom">
-            <h2>Let's <br> <span class="featured-text">connect</span></h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo pariatur nobis, magnam ducimus ad
-                deserunt doloribus optio earum nam praesentium facilis voluptatum iure eligendi perspiciatis
-                delectus,
-                obcaecati quam. Corrupti, vero.</p>
-        </div>
-        <div class="col-6-bottom">
-            <p><strong>Call:</strong> <a href="tel:#">0455 44444</a></p>
-            <p><strong>Email:</strong> <a href="mailto:#">hello@thesleep.co</a></p>
-            <p><strong>Store:</strong> 55 Main St, Chicago</p>
-            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/thesleepco">@thesleepco</a></p>
-        </div>
-    </footer>
-
-</body>
-
-</html>
+  

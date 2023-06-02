@@ -1,5 +1,15 @@
 ---
 layout: default
+cards:
+ - heading: small heading
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ad perferendis beatae facere eum illo nostrum
+   featured_image: /images/the-sleep-co-1.jpg
+ - heading: small heading
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ad perferendis beatae facere eum illo nostrum
+   featured_image: /images/the-sleep-co-4.jpg
+ - heading: small heading
+   description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem ad perferendis beatae facere eum illo nostrum
+   featured_image: /images/the-sleep-co-2.jpg
 ---
 
     <!--------------------------- Header nav banner ------------------------->
@@ -49,39 +59,18 @@ layout: default
     <!-- Cards -->
 
     <section class="grid padded">
+        {% for item in page.cards %}
         <div class="col-4 padded-sm">
             <div class="card">
-                <div class="bg-image portrait"></div>
+                <div class="bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
                 <div class="padded-1">
-                    <h3> little heading </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam necessitatibus
-                        suscipit est tenetur! Dolore ex omnis reprehenderit expedita id nemo recusandae soluta, itaque
-                        explicabo provident eligendi aspernatur assumenda beatae? </p>
+                    <h3> {{item.heading}} </h3>
+                    <p> {{item.description}} </p>
                 </div>
             </div>
         </div>
-        <div class="col-4 padded-sm">
-            <div class="card">
-                <div class="bg-image portrait"></div>
-                <div class="padded-1">
-                    <h3> little heading </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam necessitatibus
-                        suscipit est tenetur! Dolore ex omnis reprehenderit expedita id nemo recusandae soluta, itaque
-                        explicabo provident eligendi aspernatur assumenda beatae? </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-4 padded-sm">
-            <div class="card">
-                <div class="bg-image portrait"></div>
-                <div class="padded-1">
-                    <h3> little heading </h3>
-                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quibusdam necessitatibus
-                        suscipit est tenetur! Dolore ex omnis reprehenderit expedita id nemo recusandae soluta, itaque
-                        explicabo provident eligendi aspernatur assumenda beatae? </p>
-                </div>
-            </div>
-        </div>
+        {% endfor %}
+       
     </section>
 
     <!-------------------------- Image Banner ------------------------->

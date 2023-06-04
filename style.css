@@ -89,9 +89,9 @@ a {
     border-bottom: 1px solid;
  }
 
- a:hover {
+ /* a:hover {
     color: #FFBE00;
- }
+ } */
 
 
 
@@ -164,6 +164,37 @@ nav a {
 footer a { border: none; }
 
 
+/* Mobile Menu Styles */
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mobile-menu a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.mobile-menu a:hover {
+    font-weight: bold;
+}
+
+.hamburger-button {
+    position: relative;
+    z-index: 2;
+}
+
+.hamburger-button i {
+    font-size: 2.2rem;
+    margin-bottom: 0;
+}
+
+
 /* background images */
 
 .bg-bed { 
@@ -218,7 +249,8 @@ textarea:focus {
 
 .show-xs, 
 .show-sm,
-.show-md {
+.show-md,
+.mobile-menu {
 	display: none;
 }
 
@@ -228,7 +260,7 @@ textarea:focus {
 @media (max-width: 64em) {
 
     body {
-        border: 2px solid green;
+        /* border: 2px solid green; */
         padding: 0.5rem;
     }
 
@@ -247,7 +279,7 @@ textarea:focus {
     html    { font-size: 14px; }
     p       { font-size: 1.1rem; }
 
-    body{ border: 2px solid blue; }
+    /* body{ border: 2px solid blue; } */
 
 
   .show-sm { display: block; }
@@ -280,7 +312,7 @@ textarea:focus {
 
 @media (max-width: 36em) {
 
-    body { border: 2px solid lightblue; }
+    /* body { border: 2px solid lightblue; } */
 
   .show-xs { display: block; }
   .hide-xs { display: none;  }
@@ -296,7 +328,7 @@ textarea:focus {
 
 @media (max-width: 25em) {
 
-    body { border: 2px solid orange; }
+    /* body { border: 2px solid orange; } */
 
     [class*=grid] .xxs-stack {
     flex-basis: 100%;

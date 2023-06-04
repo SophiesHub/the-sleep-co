@@ -22,6 +22,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
 
+    <!-- This is for Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <!-- This is a link to the css stylesheet -->
     <link href="/style.css" rel="stylesheet">
 
@@ -35,19 +38,32 @@
     <header class="grid tall-60">
         
         <div class="header-nav col-12-top grid">
-    <div class="col-4_sm-12-middle sm-padded-bottom-0">
+    <div class="col-4_sm-11-middle sm-padded-bottom-0">
         <a href="/index.html" class="logo">
             <h2>The Sleep Co</h2>
         </a>
     </div>
-    <nav class="col-8_sm-12-middle text-right sm-text-center">
+    <nav class="col-8_sm-12-middle text-right sm-text-center hide-sm">
         <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
         <a href="/products.html">Products</a>
         <a href="/contact.html">Contact</a>
     </nav>
 
+    <div class="col-1 show-sm">
+        <div class="hamburger-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+
 </div>
+
+<nav class="mobile-menu bg-featured padded">
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/products.html">Products</a>
+    <a href="/contact.html">Contact</a>
+</nav>
 
         <div class="col-12 text-center">
             <h3 class="font-weight-extra-bold">Why<span class="featured-text"> wait</span></h3>
@@ -144,6 +160,15 @@
             <p><strong>Instagram:</strong> <a href="https://www.instagram.com/thesleepco">@thesleepco</a></p>
         </div>
     </footer>
+
+    <!-- Add jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Animate on Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     <!-- Our custom Javascript file -->
+     <script src="/scripts.js"></script>
 
 </body>
 
